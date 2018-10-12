@@ -91,6 +91,10 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+            @extends('layouts.app')
+            @section('content')
+                <example-component></example-component>
+            @endsection
         </div>
     </body>
 </html>
