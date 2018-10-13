@@ -24,4 +24,11 @@ Route::get('formularioAgencia', function () {
     return view('FormularioAgencia');
 });
 
+
 Route::post('registroPaquete','paqueteController@crear');
+
+Route::get('/landingTurista', function () {
+    return view('landingTurista');
+});
+
+Route::post('verPaquetes','listarPaquetesController@consultar');
