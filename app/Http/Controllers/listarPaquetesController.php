@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class listarPaquetesController extends Controller
 {
-    //
+
     public function consultar(){
         $paquetes = Paquete::all();
         $paquetes = Paquete::get();
@@ -59,12 +59,16 @@ class listarPaquetesController extends Controller
             }
         }
 
+        $totalPago = $pack->precio_min * $request->opcion;
+
+
+
         $user = Paquete::find($request->id);
         $user->lugares = ($pack->lugares) - ($request->opcion);
         $user->save();
-        echo($pack->lugares);
-        echo($request->lugares);
-        echo ($user->lugares);
+        return view('vistaBoleto')->with('datos',$request)
+             ->with('pago',$totalPago)
+             ->with('datosPack',$pack);
 
     }
 
