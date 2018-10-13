@@ -10534,3 +10534,8 @@ a.text-dark:focus {
   margin-left: 20px;
 }
 
+.centrar-form {
+  margin: auto;
+  float: none;
+}
+
