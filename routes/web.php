@@ -36,7 +36,7 @@ Route::post('registroPaquete','paqueteController@crear');
 Route::get('/landingTurista', function () {
     return view('landingTurista');
 });
-
+Route::get('consultaRes','resultadosController@buscar');
 Route::post('verPaquetes','listarPaquetesController@consultar');
 Route::get('descripcion','listarPaquetesController@describirPaquete');
 Route::get('comprar','listarPaquetesController@adquirirPaquete');
