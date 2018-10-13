@@ -12,21 +12,25 @@
 */
 
 Route::get('/', function () {
-    return view('modificarPerfil');
+    return view('landingTurista');
 });
-Route::get('/modificarPerfil', function () {
-    return view('modificarPerfil');
+Route::get('/datosAgencia', function () {
+    return view('datosAgencia');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('crearDatosAgencia','agencyDataController@crear');
+Route::post('modificarDatosAgencia','agencyDataController@modificar');
 Route::get('formularioAgencia', function () {
     return view('FormularioAgencia');
 });
+Route::get('modDatosAgencia', function () {
+    return view('modDatosAgencia');
+});
 
-
+Route::get('verPerfil','perfilController@getPerfil');
 Route::post('registroPaquete','paqueteController@crear');
 
 Route::get('/landingTurista', function () {
