@@ -1,6 +1,6 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Cairo:300,400');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 // Variables
 @import 'variables';
 
@@ -8,6 +8,26 @@
 @import '~bootstrap/scss/bootstrap';
 
 .navbar-laravel {
-  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.wi {
+  background-color:#333435;
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+}
+.a{
+  fill:#001a42;
+}
+.a,.b{
+  stroke:none;
+}
+.b,.c{
+  fill:#fff;
+}
+.d{
+  stroke:none;
+}
+.e{
+  fill:none;
 }
