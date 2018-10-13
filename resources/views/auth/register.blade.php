@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <h4 class="text-center">{{ __('Empieza a ofertar tus paquetes') }}</h4>
+            <h4 class="text-center pt-5">{{ __('Empieza a ofertar tus paquetes') }}</h4>
             <div class="card-img-top text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 266" preserveAspectRatio="xMidYMid meet", width="150" height="150">
                     <g transform="translate(-778 -154)">
