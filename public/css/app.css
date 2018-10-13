@@ -10526,3 +10526,7 @@ a.text-dark:focus {
   stroke-width: 17px;
 }
 
+.black {
+  font-weight: 700;
+}
+
