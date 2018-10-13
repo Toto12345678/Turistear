@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<div class=row>
-  <div class="col-md-12 text-center">
-    <h1>Tenemos estos paquetes para ti</h1>
+  <div class=row>
+    <div class="col-md-12 text-center">
+      <h1>Tenemos estos paquetes para ti</h1>
     </div>
-</div>
+  </div>
  <div class="row">
         @foreach($paquetes as $paquete)
           <div class="col-md-3 pt-5 mx-auto">
