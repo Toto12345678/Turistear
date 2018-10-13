@@ -24,4 +24,4 @@ Route::get('formularioAgencia', function () {
     return view('FormularioAgencia');
 });
 
-Route::post('ffds', 'formularioAgenciaController@prueba');
+Route::post('registroPaquete','paqueteController@crear');
