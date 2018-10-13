@@ -5,7 +5,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\UploadedFile;
 
 use App\agencyData;
 class agencyDataController extends Controller

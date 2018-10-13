@@ -2,15 +2,20 @@
 
 namespace App\Http\Controllers;
 use App\Paquete;
-use App\img;
+use App\fotos;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Intervention\Image\Facades\Image;
+use Illuminate\Support\Facades\Auth;
 
 class paqueteController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function crear(Request $request)
     {
       $idPack = Paquete::create([
@@ -27,16 +32,15 @@ class paqueteController extends Controller
         'fecha_fin' => $request ->fecha_fin,
         'lugares' => $request ->lugares,
        ]);
-
-       $nameImgPerfil = $_FILES['dir_img']['name'];
-       $perfilName=  $idPack->id.$nameImgPerfil;
-       $rutaPerfil= 'imgPacks/'.$perfilName;
-       Image::make($request->file('foto_perfil'))
+       $nameImgPerfil = $_FILES['img']['name'];
+       $perfilName= $idPack->id.$nameImgPerfil;
+       $rutaImg= 'imgAgencia/'.$perfilName;
+       Image::make($request->file('img'))
        ->resize(1080,720)
-       ->save($rutaPerfil);
-       img::create([
+       ->save($rutaImg);
+       fotos::create([
             'id_paquete' => $idPack->id,
-            'dir_img' => $rutaPerfil, 
+            'dir_img' => $rutaImg, 
        ]);
 
       

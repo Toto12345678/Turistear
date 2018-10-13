@@ -1,20 +1,8 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- Styles -->
-    </head>
-    <body>
+@section('content')
     <div class="container">
-        <form action="{{ url('registroPaquete') }}" method="post">
+        <form action="{{ url('registroPaquete') }}" method="post"  enctype="multipart/form-data">
         {{ csrf_field() }}
             <div class="form-group">
                 <label for="exampleFormControlInput1">Estado de llegada</label>
@@ -54,6 +42,10 @@
             <input type="text" class="form-control" name="descripcion" placeholder="Descripción">
         </div>
         <div class="form-group">
+            <label>Inserta tus imagenes</label>
+            <input type="file" name="img" class="form-control">
+        </div>
+        <div class="form-group">
             <label for="exampleFormControlInput1">Fecha Fin</label>
             <input type="text" class="form-control" name="fecha_fin" placeholder="Fecha Fin">
         </div>
@@ -61,12 +53,7 @@
             <label for="exampleFormControlInput1">Número de lugares</label>
             <input type="text" class="form-control" name="lugares" placeholder="Número de lugares">
         </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Inserta tus imagenes</label>
-            <input type="file" name="dir_img">
-        </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
 </div>
-    </body>
-</html>
+@endsection

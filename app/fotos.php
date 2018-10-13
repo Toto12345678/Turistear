@@ -4,10 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class img extends Model
+class fotos extends Model
 {
-    //
     protected $fillable = [
-        'id_paquete','dir_img',
+        'id_paquete', 'dir_img',
     ];
 }
