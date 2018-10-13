@@ -22,7 +22,7 @@
                 <p style="text-align:left;margin-top:0;margin-bottom:0;"><strong style="text-align:right;">Precio:(c/u) </strong>{{$paquete->precio_min}}</p>
                 <p style="text-align:justify;margin-top:0;margin-bottom:0;"><strong style="text-align:left;">Tiempo restante: </strong>{{$paquete->created_at}}</p>
                 </div>
-                <form action="{{url('perfilTransporte')}}" method="get">
+                <form action="{{url('descripcion')}}" method="get">
                   <input type="hidden" name="usuario" value="{{$paquete->id}}">
                   <input type="submit" class="btn boton" value="Ver perfil" style="background:#18d26e;width: 100%">
                   {{csrf_field()}}
