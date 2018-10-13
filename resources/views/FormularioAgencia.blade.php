@@ -61,6 +61,10 @@
             <label for="exampleFormControlInput1">Número de lugares</label>
             <input type="text" class="form-control" name="lugares" placeholder="Número de lugares">
         </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Inserta tus imagenes</label>
+            <input type="file" name="dir_img">
+        </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
 </div>
