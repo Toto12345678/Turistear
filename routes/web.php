@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('formularioAgencia', function () {
+    return view('FormularioAgencia');
+});
+
+Route::post('ffds', 'formularioAgenciaController@prueba');
