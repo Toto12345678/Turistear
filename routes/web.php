@@ -14,7 +14,9 @@
 Route::get('/', function () {
     return view('modificarPerfil');
 });
-
+Route::get('/modificarPerfil', function () {
+    return view('modificarPerfil');
+});
 
 Auth::routes();
 

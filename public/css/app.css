@@ -10500,3 +10500,29 @@ a.text-dark:focus {
   fill: none;
 }
 
+.full-height {
+  min-height: 85vh;
+}
+
+.a2 {
+  fill: #001a42;
+}
+
+.b2 {
+  fill: url(#a);
+}
+
+.c2,
+.d2 {
+  fill: none;
+  stroke: #efc143;
+}
+
+.c2 {
+  stroke-width: 18px;
+}
+
+.d2 {
+  stroke-width: 17px;
+}
+
