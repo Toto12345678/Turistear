@@ -10587,3 +10587,7 @@ a.text-dark:focus {
   float: none;
 }
 
+.full-width {
+  width: 100vw;
+}
+
