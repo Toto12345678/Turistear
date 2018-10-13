@@ -1,6 +1,6 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
 // Variables
 @import 'variables';
 
@@ -32,7 +32,7 @@
   fill:none;
 }
 .full-height{
-  min-height: 85vh;
+  min-height: 92.2vh;
 }
 
 .a2{
@@ -52,4 +52,30 @@
 }
 .black{
   font-weight: 700;
+}
+
+.bg-sky{
+  min-height: 92.2vh;
+  background: linear-gradient( rgba(255,255,255,0),rgba(255,255,255,0), rgba(239,193,67,1));
+}
+.title-top-content{
+  display: flex;
+  height:  32.2vh;
+  width:  100vw;
+  align-items: flex-end;
+  justify-content: center;
+}
+.top-content{
+  display: flex;
+  height:  20vh;
+  width:  100vw;
+  align-items: flex-start;
+  justify-content: center;
+}
+.bottom-content{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 40vh;
+  width: 100vw;
 }

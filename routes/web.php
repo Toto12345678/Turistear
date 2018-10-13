@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('modificarPerfil');
+    return view('landingTurista');
 });
 Route::get('/modificarPerfil', function () {
     return view('modificarPerfil');

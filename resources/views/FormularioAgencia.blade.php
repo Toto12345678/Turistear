@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <h4 class="text-secondary">Nuevo paquete turístico</h4>
     <div class="container">
         <form action="{{ url('registroPaquete') }}" method="post"  enctype="multipart/form-data">
         {{ csrf_field() }}
