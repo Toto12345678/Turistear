@@ -12,5 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('modificarPerfil');
 });
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::post('crearDatosAgencia','agencyDataController@crear');
+Route::get('formularioAgencia', function () {
+    return view('FormularioAgencia');
+});
+
+Route::post('ffds', 'formularioAgenciaController@prueba');
