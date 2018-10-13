@@ -23,7 +23,7 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-mdnavbar navbar-dark bg-dark navbar-laravel">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Viajes Ahora') }}
                 </a>
@@ -50,6 +50,9 @@
                                 @endif
                             </li>
                         @else
+                        <li class="nav-item">
+                        <a class="nav-link text-white" href="{{ url('verPerfil') }}">{{ __('Perfil') }}</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h5 class="pl-2 pb-3">Antes de continuar, completa tu perfil</h5>
+<h5 class="pl-2 pb-3">Edita tu perfil</h5>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-4 text-center">
@@ -23,10 +23,10 @@
             <p>toto@yopmail.com</p>
         </div>
         <div class="col-md-8">
-            <form class="" action="{{url('crearDatosAgencia')}}" method="post"  enctype="multipart/form-data">
+            <form class="" action="{{url('modificarDatosAgencia')}}" method="post"  enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="text-black"><span class="fas fa-phone"></span><b> Teléfono:</b></label>
-                    <input type="text" name="telefono" class="form-control">
+                    <input type="number" name="telefono" class="form-control">
                 </div>
 
                 <div class="form-group">
@@ -46,7 +46,7 @@
 
                 <div class="form-group">
                     <label for="text-black"><span class="far fa-credit-card"></span><b> Número de cuenta:</b></label>
-                    <input type="text" name="num_cuenta" class="form-control">
+                    <input type="number" name="num_cuenta" class="form-control">
                 </div>
 
                     <input type="submit" class="form-control" value="Guardar Cambios">
