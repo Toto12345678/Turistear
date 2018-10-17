@@ -37,7 +37,9 @@ Route::get('/landingTurista', function () {
     return view('landingTurista');
 });
 
+Route::get('consultaRes','resultadosController@buscar');
 Route::get('verPaquetes','listarPaquetesController@consultar');
 Route::get('descripcion','listarPaquetesController@describirPaquete');
 Route::get('comprar','listarPaquetesController@adquirirPaquete');
 Route::get('comprarpaquete','listarPaquetesController@comprarPaquete');
+

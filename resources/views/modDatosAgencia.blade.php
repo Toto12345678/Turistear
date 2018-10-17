@@ -31,7 +31,7 @@
 
                 <div class="form-group">
                     <label for="text-black"><span class="fas fa-camera"></span><b> Foto de perfil:</b></label>
-                    <input type="file" name="foto_perfil" class="form-control">
+                    <input type="file" name="foto_perfil" class="form-control-file">
                 </div>
 
                 <div class="form-group">
@@ -49,7 +49,7 @@
                     <input type="number" name="num_cuenta" class="form-control">
                 </div>
 
-                    <input type="submit" class="form-control" value="Guardar Cambios">
+                    <input type="submit" class="form-control btn btn-primary" value="Guardar Cambios">
             {{ csrf_field() }}
             </form>
         </div>

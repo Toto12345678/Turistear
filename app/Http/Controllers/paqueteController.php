@@ -42,7 +42,7 @@ class paqueteController extends Controller
             'id_paquete' => $idPack->id,
             'dir_img' => $rutaImg, 
        ]);
-
+       return view('landingTurista');
       
         
 

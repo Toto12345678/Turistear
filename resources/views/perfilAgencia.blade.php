@@ -5,19 +5,7 @@
 <div class="container-fluid full-height">
     <div class="row">
         <div class="col-md-4 text-center pt-4">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 266" preserveAspectRatio="xMidYMid meet", width="150" height="150">
-                <g transform="translate(-778 -154)">
-                    <g class="a" transform="translate(778 154)">
-                        <circle class="d" cx="120" cy="120" r="120"/>
-                        <circle class="e" cx="120" cy="120" r="119.5"/>
-                    </g>
-                    <g class="b" transform="translate(825 189)">
-                        <circle class="d" cx="73.5" cy="73.5" r="73.5"/>
-                        <circle class="e" cx="73.5" cy="73.5" r="73"/>
-                    </g>
-                    <rect class="c" width="120" height="98" rx="40" transform="translate(837 322)"/>
-                </g>
-            </svg>
+            <img class="img-thumbnail img-usuario" src="{{asset($agencia->foto_perfil)}}" alt="Card image cap">
             <br>
             <ul class="list-group">
                 <li class="list-group-item"><strong>Nombre: </strong>{{$user->name}}</li>
