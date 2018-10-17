@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h5 class="pl-2 pb-3">Edita tu perfil</h5>
+<h5 class="pl-2 py-3">Edita tu perfil</h5>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-4 text-center">

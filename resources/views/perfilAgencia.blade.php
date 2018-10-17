@@ -5,7 +5,13 @@
 <div class="container-fluid full-height">
     <div class="row">
         <div class="col-md-4 text-center pt-4">
+<<<<<<< HEAD
             <img class="img-thumbnail img-usuario" src="{{asset($agencia->foto_perfil)}}" alt="Card image cap">
+=======
+            <div class="d-flex justify-content-center">
+                <img class="img-thumbnail img-usuario" src="{{asset($agencia->foto_perfil)}}" alt="Card image cap">
+            </div>
+>>>>>>> 3880076f84ec594c98e0f4cc99c8898869c02b4a
             <br>
             <ul class="list-group">
                 <li class="list-group-item"><strong>Nombre: </strong>{{$user->name}}</li>

@@ -10591,3 +10591,8 @@ a.text-dark:focus {
   width: 100vw;
 }
 
+.img-usuario {
+  max-width: 300px;
+  max-height: 300px;
+}
+
