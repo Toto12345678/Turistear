@@ -10536,6 +10536,10 @@ a.text-dark:focus {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #efc143);
 }
 
+.world {
+  width: 100vw;
+}
+
 .title-top-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10594,5 +10598,45 @@ a.text-dark:focus {
 .img-usuario {
   max-width: 300px;
   max-height: 300px;
+}
+
+.package-img {
+  width: 100%;
+}
+
+.title-lg {
+  font-size: 1.3rem;
+}
+
+.full-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom-column {
+  float: none;
+  display: table-cell;
+  vertical-align: bottom;
+  height: 15vh !important;
 }
 

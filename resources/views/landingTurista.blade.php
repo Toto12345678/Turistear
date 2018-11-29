@@ -13,7 +13,7 @@
 			</form>
 		</div>
 		<div class="bottom-content">
-			<img class="" src="{{asset('./svg/world.svg')}}" alt="mundo">
+			<img class="world" src="{{asset('./svg/world.svg')}}" alt="mundo">
 		</div>
 	</div>
  @endsection

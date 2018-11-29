@@ -58,6 +58,9 @@
   min-height: 92.2vh;
   background: linear-gradient( rgba(255,255,255,0),rgba(255,255,255,0), rgba(239,193,67,1));
 }
+.world{
+  width: 100vw;
+}
 .title-top-content{
   display: flex;
   height:  32.2vh;
@@ -92,4 +95,27 @@
 .img-usuario{
   max-width: 300px;
   max-height: 300px;
+}
+.package-img{
+  width: 100%;
+}
+.title-lg{
+  font-size: 1.3rem;
+}
+.full-height{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-column{
+  float: none;
+    display: table-cell;
+    vertical-align: bottom;
+    height: 15vh !important;
 }
