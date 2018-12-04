@@ -6,7 +6,6 @@
 		<div class="top-content">
 			<form class="form-inline"  action="{{ url('consultaRes') }}" method="get">
 				<div class="form-group mx-sm-3 mb-2">
-					<label for="inputPassword2" class="sr-only">Password</label>
 					<input type="text" class="form-control" name="name" placeholder="Busca tu viaje inolvidable">
 				</div>
 				<button type="submit" class="btn btn-primary mb-2">Ir</button>

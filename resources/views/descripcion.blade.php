@@ -23,6 +23,9 @@
                 <p class="text-danger"><strong class="font-weight-bold">Esta oferta acaba en: </strong>{{$paquete->fecha_fin}}</p>
                 
                 <form action="{{url('comprar')}}" method="get">
+                        <input type="hidden" name="lugares" value="{{$paquete->lugares}}">
+                        <input type="hidden" name="id" value="{{$paquete->id}}">
+                        <input type="hidden" name="precio" value="{{$paquete->precio_min}}">
                     <input type="submit" class="btn btn-primary btn-block" value="Adquirir oferta">
                     {{csrf_field()}}
                 </form>
